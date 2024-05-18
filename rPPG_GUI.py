@@ -1,6 +1,5 @@
 # Video pulse rate monitor using rPPG with the chrominance method.
 import cv2
-############################## User Settings #############################################
 camera = cv2.VideoCapture(0)
 class Settings():
     def __init__(self):
@@ -10,9 +9,7 @@ class Settings():
         self.sub_roi = []#          [.35,.65,.05,.15] # If instead of skin classifier, forhead estimation should be used
         self.use_resampling = True  # Set to true with webcam
 
-# In the source either put the data path to the image sequence/video or "webcam"
-#source = "C:\\Users\\marti\\Downloads\\Data\\13kmh.mp4" # stationary\\bmp\\"
-#source = "C:\\Users\\marti\\Downloads\\Data\\stationary\\bmp\\"
+
 source = "webcam"
 fs = 20 # Please change to the capture rate of the footage.
 
